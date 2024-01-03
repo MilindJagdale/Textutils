@@ -79,13 +79,14 @@ export default function Navbar(props) {
               Search
             </button>
           </form> */}
-          <div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}>
+          
   
   <div className="btn-group" role="group" aria-label="Basic mixed styles example">
   <button type="button" onClick={props.changeOrange} className="btn btn-orange">Orange</button>
   <button type="button" onClick={props.changeBlue} className="btn btn-blue">Blue</button>
   <button type="button" onClick={props.changeRed} className="btn btn-red">Red</button>
 </div>
+<div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}>
 <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
   <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable Dark Mode</label>
 </div>
